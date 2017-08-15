@@ -1,1 +1,20 @@
-<html
+<!doctype html>
+<html lang="en" ng-app="eventsApp">
+<head>
+  <meta charset="utf-8">
+  <title>Event Registration</title>
+</head>
+<body>
+  <img ng-src="{{event.imageUrl}}" />
+  <div ng-controller="EventController">
+    <h2>{{event.name}}</h2>
+    <div>
+      {{event.location.address}}
+      {{event.location.city}}
+    </div>
+  </div>
+  <script src="/lib/angular/angular.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/controllers/EventController.js"></script>
+</body>
+</html>
